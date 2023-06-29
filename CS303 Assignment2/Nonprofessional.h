@@ -15,6 +15,8 @@
 #include <string>
 #include "Employees.h"
 
+
+// Nonprofessional class declarations
 class Nonprofessional : public Employee {
 private:
 	float hoursWorked;

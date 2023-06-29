@@ -5,12 +5,14 @@
 
 #include "Employees.h"
 
+// Employee default constructor
 Employee::Employee() {
 	weeklyPay = 0;
 	vacationDays = 0;
 	healthContributions = 0;
 }
 
+// Employee overloaded constructor
 Employee::Employee(float weeklyPay) {
 	this->weeklyPay = weeklyPay;
 	vacationDays = 0;

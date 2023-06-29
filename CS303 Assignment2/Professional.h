@@ -16,6 +16,8 @@
 #include "Employees.h"
 #include "Professional.h"
 
+
+//Professional class definitions
 class Professional : public Employee {
 private:
 	float salary;

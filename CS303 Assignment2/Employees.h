@@ -15,6 +15,7 @@
 #include <string>
 #include "Employees.h"
 
+// Employee class declarations
 class Employee {
 protected:
 	float weeklyPay;
@@ -25,6 +26,7 @@ public:
 	Employee();                            //constructor: default
 	Employee(float hourlyPay);   //constructor: overloaded
 
+	// Virtual void definitions for use by derived classes Professional and Nonprofessional
 	virtual void print() = 0;
 	virtual void setWeeklySalary() = 0;
 	virtual void setVacationDays() = 0;

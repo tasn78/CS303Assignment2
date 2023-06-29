@@ -14,8 +14,13 @@
 #include <iostream>
 #include <iomanip>
 
+// Added definitions and declarations to .hpp file after watching video : https://www.youtube.com/watch?v=WoGoAMDvwEQ - Fabrzy
+// Changes to Node class and Single_Linked_List based on Fabrzy's video
+// Used code for reference from https://www.javatpoint.com/create-linked-list-in-cpp and https://codefreakr.com/how-is-c-stl-list-implemented-internally/
+
+// Using typename TS
 namespace TS {
-    //Node Class
+    //Node Class and declarations
     template<typename Item_Type>
     class Node {
     public:
@@ -34,7 +39,7 @@ namespace TS {
     };
 
 
-
+    // Single linked list and declarations
     template<typename Item_Type>
     class Single_Linked_List {
 
@@ -43,7 +48,7 @@ namespace TS {
         Node<Item_Type>* tail;
         size_t num_items;
         // Constructor
-        Single_Linked_List() : head(NULL), tail(NULL), num_items(0) {};
+        Single_Linked_List() : head(NULL), tail(NULL), num_items(0) {}; // Default constructor
 
         // Functions
         void push_front(const Item_Type& item);
@@ -60,6 +65,8 @@ namespace TS {
     };
  
 };
+
+
 //NODE Functions
 // Setter for Node item
 template <typename Item_Type>

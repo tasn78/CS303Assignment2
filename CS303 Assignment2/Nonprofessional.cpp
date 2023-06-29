@@ -5,6 +5,7 @@
 
 #include "Nonprofessional.h"
 
+// Default constructor
 Nonprofessional::Nonprofessional() {
 	hoursWorked = 0;
 	weeklyPay = 0;
@@ -12,7 +13,7 @@ Nonprofessional::Nonprofessional() {
 	healthContributions = 0;
 }
 
-
+// Overloaded constructor
 Nonprofessional::Nonprofessional(float hoursWorked) : Employee() {
 	this->hoursWorked = hoursWorked;
 	weeklyPay = 0;
@@ -20,16 +21,22 @@ Nonprofessional::Nonprofessional(float hoursWorked) : Employee() {
 	healthContributions = 0;
 }
 
+// Sets weekly salary
 void Nonprofessional::setWeeklySalary() {
 	weeklyPay = hoursWorked * hourlyRate;
 }
+
+// Sets vacation days based on hours worked
 void Nonprofessional::setVacationDays() {
 	vacationDays = hoursWorked * 1.52 / 24.0;
 }
+
+// Sets health contributions based on weekly pay (20% of weekly income)
 void Nonprofessional::setHealthContributions() {
 	healthContributions = this->weeklyPay * 0.20;
 }
 
+// Prints Nonprofessional information
 void Nonprofessional::print() {
 	std::cout << "Employee Type : Nonprofessional" << std::endl;
 	std::cout << "Hours worked : " << this->hoursWorked << std::endl;
