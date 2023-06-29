@@ -32,7 +32,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Single_Linked_List.h">
+    <ClInclude Include="Single_Linked_List.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Employees.h">

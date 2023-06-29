@@ -1,13 +1,6 @@
-﻿  Single_Linked_List.cpp
-  main.cpp
-  Generating Code...
-main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Single_Linked_List<int>::push_front(int)" (?push_front@?$Single_Linked_List@H@@QEAAXH@Z) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Single_Linked_List<int>::push_back(int)" (?push_back@?$Single_Linked_List@H@@QEAAXH@Z) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Single_Linked_List<int>::pop_front(void)" (?pop_front@?$Single_Linked_List@H@@QEAAXXZ) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: int & __cdecl Single_Linked_List<int>::front(void)const " (?front@?$Single_Linked_List@H@@QEBAAEAHXZ) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: int & __cdecl Single_Linked_List<int>::back(void)const " (?back@?$Single_Linked_List@H@@QEBAAEAHXZ) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Single_Linked_List<int>::empty(void)const " (?empty@?$Single_Linked_List@H@@QEBA_NXZ) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: void __cdecl Single_Linked_List<int>::insert(unsigned __int64,int const &)" (?insert@?$Single_Linked_List@H@@QEAAX_KAEBH@Z) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl Single_Linked_List<int>::remove(unsigned __int64)" (?remove@?$Single_Linked_List@H@@QEAA_N_K@Z) referenced in function main
-main.obj : error LNK2019: unresolved external symbol "public: unsigned __int64 __cdecl Single_Linked_List<int>::find(int const &)" (?find@?$Single_Linked_List@H@@QEAA_KAEBH@Z) referenced in function main
-C:\Users\Owner\Documents\GitHub\CS303 Assignment2\x64\Debug\CS303 Assignment2.exe : fatal error LNK1120: 9 unresolved externals
+﻿  main.cpp
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\main.cpp(32,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\main.cpp(35,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Single_Linked_List.hpp(164): warning C4172: returning address of local variable or temporary: item
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Single_Linked_List.hpp(175): warning C4172: returning address of local variable or temporary: item
+  CS303 Assignment2.vcxproj -> C:\Users\Owner\Documents\GitHub\CS303 Assignment2\x64\Debug\CS303 Assignment2.exe

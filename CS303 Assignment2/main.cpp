@@ -3,26 +3,38 @@
 // Created by Owner on 6/24/2023.
 // Assignment 2
 
-#include "Single_Linked_List.h"
+#include "Single_Linked_List.hpp"
 #include "Employees.h"
 #include "Professional.h"
 #include "Nonprofessional.h"
 
+using namespace TS;
 
 int main() {
 
-	Single_Linked_List<int> names;
-	names.push_back(1);
-	names.push_back(2);
-	names.push_front(3);
+	Single_Linked_List<std::string> names;
+	names.push_back("Tom");
+	names.push_back("Bill");
+	names.push_front("Stacy");
+	names.push_front("Lindsey");
+	names.print();
 	names.pop_front();
-	names.front();
-	names.back();
+	names.print();
+	std::string front = names.front();
+	std::cout << "Front item : " << front << std::endl << std::endl;
+	std::string back = names.back();
+	std::cout << "Back item : " << back << std::endl << std::endl;
 	names.empty();
-	names.insert(1, 4);
-	names.remove(2);
-	names.find(3);
-	names.find(4);
+	names.insert(1, "Mayumi");
+	names.print();
+	names.remove(0);
+	names.print();
+	int index1 = names.find("Tom");
+	std::cout << "Tom is at index : " << index1 << std::endl << std::endl;
+	names.find("Mayumi");
+	int index2 = names.find("Mayumi");
+	std::cout << "Mayumi is at index : " << index2 << std::endl << std::endl;
+	names.print();
 
 
 

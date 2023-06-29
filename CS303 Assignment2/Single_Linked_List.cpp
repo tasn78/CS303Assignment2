@@ -3,11 +3,12 @@
 // Created by Owner on 6/24/2023.
 // Assignment 2
 
-#include "Single_Linked_List.h"
+// This was the framework for the beginning of my definitions before I realized the issue with templates and definitions in a .cpp, corrections made in .hpp
 
+/*
 
 template <typename Item_Type>
-void Single_Linked_List<Item_Type>::push_front(Item_Type item) {
+void Single_Linked_List<Item_Type>::push_front(const Item_Type& item) {
     Node* new_node = new Node(item);
     new_node->next = head;
     head = new_node;
@@ -19,9 +20,9 @@ void Single_Linked_List<Item_Type>::push_front(Item_Type item) {
 
 
 template <typename Item_Type>
-void Single_Linked_List<Item_Type>::push_back(Item_Type item) {
+void Single_Linked_List<Item_Type>::push_back(const Item_Type& item) {
     Node* new_node = new Node(item);
-    if (!head) {
+    if (empty()) {
         head = new_node;
         tail = new_node;
     }
@@ -74,22 +75,24 @@ void Single_Linked_List<Item_Type>::pop_back() {
 
 
 template <typename Item_Type>
-Item_Type& Single_Linked_List<Item_Type>::front() const {
+Item_Type& Single_Linked_List<Item_Type>::front() {
     if (empty()) {
         std::cout << "List is empty." << std::endl << std::endl;
-        return Item_Type();
+        Item_Type item;
+        return item;
     }
-    return head->data;
+    return head->item;
 }
 
 
 template <typename Item_Type>
-Item_Type& Single_Linked_List<Item_Type>::back() const {
+Item_Type& Single_Linked_List<Item_Type>::back() {
     if (empty()) {
-        std::cout << "The list is empty." << std::endl << std::endl;
-        return Item_Type();
+        std::cout << "List is empty." << std::endl << std::endl;
+        Item_Type item;
+        return item;
     }
-    return tail->data;
+    return tail->item;
 }
 
 
@@ -109,16 +112,16 @@ void Single_Linked_List<Item_Type>::insert(size_t index, const Item_Type& item) 
     if (index >= num_items) {
         push_back(item);
     }
-        
+
     else if (index == 0) {
         push_front(item);
-        }
+    }
 
     else if (index == num_items && index != 0) {
         Node* new_node = new Node(item);
         tail->next = new_node;
         tail = new_node;
-        }
+    }
 
     else {
         Node* new_node = new Node(item);
@@ -126,13 +129,13 @@ void Single_Linked_List<Item_Type>::insert(size_t index, const Item_Type& item) 
 
         for (size_t i = 0; i < index - 1; ++i) {
             current = current->next;
-            }
-
-            new_node->next = current->next;
-            current->next = new_node;
         }
 
-        ++num_items;
+        new_node->next = current->next;
+        current->next = new_node;
+    }
+
+    ++num_items;
 }
 
 
@@ -189,3 +192,16 @@ size_t Single_Linked_List<Item_Type>::find(const Item_Type& item) {
 
     return num_items;
 }
+
+template<typename Item_Type>
+void Single_Linked_List<Item_Type>::print() {
+    Node* current = head;
+    while (current != nullptr) {
+        std::cout << current->item << " ";
+        current = current->next;
+    }
+    std::cout << std::endl;
+}
+
+
+*/

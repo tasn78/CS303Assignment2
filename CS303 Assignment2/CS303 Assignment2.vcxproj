@@ -137,7 +137,7 @@
     <ClInclude Include="Employees.h" />
     <ClInclude Include="Nonprofessional.h" />
     <ClInclude Include="Professional.h" />
-    <ClInclude Include="Single_Linked_List.h" />
+    <ClInclude Include="Single_Linked_List.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
