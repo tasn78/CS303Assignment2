@@ -265,7 +265,7 @@ bool TS::Single_Linked_List<Item_Type>::remove(size_t index) {
     return true;
 }
 
-// Searches for item and returns index, returns -1 if not found
+// Searches for item and returns index, returns list size if not found
 template <typename Item_Type>
 size_t TS::Single_Linked_List<Item_Type>::find(const Item_Type& item) {
     Node<Item_Type>* current = head;
@@ -280,7 +280,7 @@ size_t TS::Single_Linked_List<Item_Type>::find(const Item_Type& item) {
         ++index;
     }
 
-    return -1;
+    return num_items;
 }
 
 // Prints list

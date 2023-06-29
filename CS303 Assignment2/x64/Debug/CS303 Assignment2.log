@@ -1,6 +1,14 @@
-﻿  main.cpp
+﻿  Employees.cpp
+  Nonprofessional.cpp
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Nonprofessional.cpp(31,36): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Nonprofessional.cpp(36,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Professional.cpp
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Professional.cpp(26,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Professional.cpp(41,44): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  main.cpp
 C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\main.cpp(32,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\main.cpp(35,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Single_Linked_List.hpp(164): warning C4172: returning address of local variable or temporary: item
-C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Single_Linked_List.hpp(175): warning C4172: returning address of local variable or temporary: item
+  Generating Code...
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Single_Linked_List.hpp(171): warning C4172: returning address of local variable or temporary: item
+C:\Users\Owner\Documents\GitHub\CS303 Assignment2\CS303 Assignment2\Single_Linked_List.hpp(182): warning C4172: returning address of local variable or temporary: item
   CS303 Assignment2.vcxproj -> C:\Users\Owner\Documents\GitHub\CS303 Assignment2\x64\Debug\CS303 Assignment2.exe
